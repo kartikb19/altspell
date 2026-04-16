@@ -9,7 +9,7 @@ import { useState, useCallback, useEffect } from "react";
 // ============================================================
 const API_BASE = "https://api.inglish.revlearn.org/api/v1";
 
-const FALLBACK_SYSTEMS = [{ id: "lytspel", label: "Lytspel" }];
+const FALLBACK_SYSTEMS = [{ id: "lytspel", label: "Lytspel" }, { id: "soundspel", label: "Soundspel" }, { id: "portul", label: "Portul" }];
 
 async function fetchSystems() {
   const res = await fetch(`${API_BASE}/spelling-systems`, {
